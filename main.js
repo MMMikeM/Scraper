@@ -3,7 +3,7 @@ const axios = require("axios");
 const url =
 	"https://kbdfans.com/collections/coming-soon/products/coming-soon-vulcan-x-kbdfans-maja-mechanical-keyboard-diy-kit";
 const PushBullet = require("pushbullet");
-const pusher = new PushBullet("o.L3hXHSFrLLXcwnwic31Ti7IkaHPXLVXF");
+const pusher = new PushBullet("");
 
 axios.get(url).then((res) => {
 	let site = cheerio.load(res.data);
